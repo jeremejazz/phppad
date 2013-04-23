@@ -1,0 +1,13 @@
+Changelog:
+
+=================================================
+
+April 23, 2013
+-Bugfix for magic quotes (for older versions of php)
+-Feature to insert php tags.
+-Separated inpage css to file
+
+
+
+Apr 17, 2013
+-added code mirror for syntax highlight

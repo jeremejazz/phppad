@@ -76,7 +76,7 @@ if (get_magic_quotes_gpc()) {
 var myCodeMirror = CodeMirror.fromTextArea(myTextArea, {
 	    lineNumbers: true,
 		  matchBrackets: true,
-        mode: "text/x-php",
+        mode: "application/x-httpd-php",
         indentUnit: 4,
         indentWithTabs: true,
         enterMode: "keep",
