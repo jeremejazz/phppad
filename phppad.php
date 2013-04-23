@@ -53,7 +53,7 @@ if (get_magic_quotes_gpc()) {
 		<?php 
 
 			if($_REQUEST['submit']){
-				eval( $_REQUEST['code']);
+				eval( '?>' . $_REQUEST['code']);
 
 			}
 
