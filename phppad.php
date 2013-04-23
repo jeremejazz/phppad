@@ -25,6 +25,7 @@ if (get_magic_quotes_gpc()) {
 
 <html>
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>PHP Pad </title>
 	<script src="codemirror/lib/codemirror.js"></script>
 <link rel="stylesheet" href="codemirror/lib/codemirror.css">
