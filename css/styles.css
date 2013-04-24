@@ -41,3 +41,14 @@
   .bottomtools{
   	text-align: right;
   }
+
+  .logo{
+    background-image: url('../images/logo.png');
+    height:69px;
+    width:137px;
+
+  }
+
+  .content{
+    padding:3px;
+  }

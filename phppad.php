@@ -38,29 +38,37 @@ if (get_magic_quotes_gpc()) {
 
 </head>
 <body>
+    <div class="header">
+    <div class="logo"></div>
+    </div>
+    <div class="content">
+    	Code: 
+        <?php
 
-	<h2>PHP PAD</h2>
+        if(!$_REQUEST['submit']){
+        ?>
+    	<div class="warning">Warning: Do not upload to public web server. For local use only</div>
+        <?php
+    }
+        ?>
+    	<form id="myform" method="POST" action = "">
 
-	Code: 
-	<div class="warning">Warning: Do not upload to public web server. For local use only</div>
-	<form id="myform" method="POST" action = "">
+    		<textarea id="codearea" name="code" rows="10"><?php echo $_REQUEST['code']; ?></textarea> <br/>
+    		<div class="bottomtools"><input type="submit" name="submit" value="submit" class="button" /></div>
+    	</form>	
 
-		<textarea id="codearea" name="code" rows="10"><?php echo $_REQUEST['code']; ?></textarea> <br/>
-		<div class="bottomtools"><input type="submit" name="submit" value="submit" class="button" /></div>
-	</form>	
+    	Output: 
+    	<div id="output">
+    		<?php 
 
-	Output: 
-	<div id="output">
-		<?php 
+    			if($_REQUEST['submit']){
+    				eval( '?>' . $_REQUEST['code']);
 
-			if($_REQUEST['submit']){
-				eval( '?>' . $_REQUEST['code']);
+    			}
 
-			}
-
-		?>
-	</div>
-
+    		?>
+    	</div>
+</div>
 	<script type="text/javascript">
 
 	window.onkeydown = function(e){
