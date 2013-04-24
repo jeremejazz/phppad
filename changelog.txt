@@ -1,6 +1,9 @@
 Changelog:
 
 =================================================
+April 24, 2013
+-add some fancy logo
+-change functionality to ajax
 
 April 23, 2013
 -Bugfix for magic quotes (for older versions of php)
