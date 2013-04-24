@@ -30,3 +30,7 @@ var myCodeMirror = CodeMirror.fromTextArea(myTextArea, {
 
         return false;
     });
+
+    $(".warning").click(function(){
+        $(this).slideUp();
+    });

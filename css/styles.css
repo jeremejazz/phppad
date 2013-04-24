@@ -2,6 +2,7 @@
 			border: dotted 1px red ;
 			background-color: yellow;
 			color:red;
+      cursor:pointer;
 		}
 		#output{
 			border: dotted 1px black;
