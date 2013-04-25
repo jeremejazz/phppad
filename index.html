@@ -10,6 +10,13 @@
         <meta name="description" content="An application that lets you run php scripts directly on your browser">
         <meta name="viewport" content="width=device-width">
 
+        <meta property="og:image" content="img/screenshot_small.png"/>
+        <meta property="og:title" content="PHPPad - Run scripts directly on your browser"/>
+        <meta property="og:url" content="http://jeremejazz.github.io/phppad/"/>
+        <meta property="og:site_name" content="Github"/>
+        <meta property="og:type" content="article"/>
+
+        
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
             body {
@@ -26,6 +33,13 @@
 
                 min-height: 100px;
             }
+
+            .photo{
+                padding:10px;
+            }
+
+
+
         </style>
         <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -44,6 +58,7 @@
 
 
         <div class="navbar navbar-inverse navbar-fixed-top" style="display:none;">
+            <!-- temporarily hidden -->
             <div class="navbar-inner">
                 <div class="container">
                     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -52,6 +67,7 @@
                         <span class="icon-bar"></span>
                     </a>
                     <a class="brand" href="#">PHPPad</a>
+
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li class="active"><a href="#">Home</a></li>
@@ -84,7 +100,11 @@
 
             
                     <img src="img/logo.png" alt="PHPPad" />
+
                 <p>An application that lets you input an run PHP scripts directly on your browser</p>
+                    <img src="img/screenshot_small.png" class="photo" alt="screenshot" /> <br/>
+
+
                   <p><a class="btn btn-primary btn-large" href="https://github.com/jeremejazz/phppad/archive/master.zip">Download</a>
 
                   </p>
