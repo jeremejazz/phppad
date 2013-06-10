@@ -1,7 +1,7 @@
 <?php
 /*PHP Pad*/
 
-
+error_reporting(E_ERROR);
 /*Disable magic quotes if turned on */
 if (get_magic_quotes_gpc()) {
     $process = array(&$_GET, &$_POST, &$_COOKIE, &$_REQUEST);
