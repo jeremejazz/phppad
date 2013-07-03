@@ -53,3 +53,7 @@
   .content{
     padding:3px;
   }
+  
+  #themechooser{
+      text-align:right;width:300px;float:right;
+  }

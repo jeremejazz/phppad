@@ -18,6 +18,18 @@ if (get_magic_quotes_gpc()) {
     }
     unset($process);
 }
+$page = array();
+
+ob_start();
+        if(!$_REQUEST['submit']){
+        ?>
+        <div class="warning">Warning: Do not upload to public web server. For local use only</div>
+        <?php
+          }
+    
+    $page['warning'] = ob_get_contents();
+    ob_end_clean();
+
 
 ?>
 
@@ -30,6 +42,26 @@ if (get_magic_quotes_gpc()) {
 	<script src="codemirror/lib/codemirror.js"></script>
 <link rel="stylesheet" href="codemirror/lib/codemirror.css">
 <link rel="stylesheet" href="codemirror/theme/monokai.css">
+
+    <link rel="stylesheet" href="codemirror/theme/neat.css">
+    <link rel="stylesheet" href="codemirror/theme/elegant.css">
+    <link rel="stylesheet" href="codemirror/theme/erlang-dark.css">
+    <link rel="stylesheet" href="codemirror/theme/night.css">
+    <link rel="stylesheet" href="codemirror/theme/monokai.css">
+    <link rel="stylesheet" href="codemirror/theme/cobalt.css">
+    <link rel="stylesheet" href="codemirror/theme/eclipse.css">
+    <link rel="stylesheet" href="codemirror/theme/rubyblue.css">
+    <link rel="stylesheet" href="codemirror/theme/lesser-dark.css">
+    <link rel="stylesheet" href="codemirror/theme/xq-dark.css">
+    <link rel="stylesheet" href="codemirror/theme/xq-light.css">
+    <link rel="stylesheet" href="codemirror/theme/ambiance.css">
+    <link rel="stylesheet" href="codemirror/theme/blackboard.css">
+    <link rel="stylesheet" href="codemirror/theme/vibrant-ink.css">
+    <link rel="stylesheet" href="codemirror/theme/solarized.css">
+    <link rel="stylesheet" href="codemirror/theme/twilight.css">
+    <link rel="stylesheet" href="codemirror/theme/midnight.css">
+
+
 <link rel="stylesheet" href="css/styles.css">
 <script src="codemirror/mode/clike/clike.js"></script>
 <script src="codemirror/mode/php/php.js"></script>
@@ -40,20 +72,49 @@ if (get_magic_quotes_gpc()) {
 </head>
 <body>
     <div class="header">
+    <div id = "themechooser">
+         Select a theme: 
+        <select  id="cmbtheme">
+            <option selected>default</option>
+            <option>ambiance</option>
+            <option>blackboard</option>
+            <option>cobalt</option>
+            <option>eclipse</option>
+            <option>elegant</option>
+            <option>erlang-dark</option>
+            <option>lesser-dark</option>
+            <option>midnight</option>
+            <option selected>monokai</option>
+            <option>neat</option>
+            <option>night</option>
+            <option>rubyblue</option>
+            <option>solarized dark</option>
+            <option>solarized light</option>
+            <option>twilight</option>
+            <option>vibrant-ink</option>
+            <option>xq-dark</option>
+            <option>xq-light</option>
+        </select>
+        </div>
+    
     <div class="logo"></div>
+     
+    
     </div>
     <div class="content">
     	Code: 
-        <?php
 
-        if(!$_REQUEST['submit']){
-        ?>
-    	<div class="warning">Warning: Do not upload to public web server. For local use only</div>
-        <?php
-    }
-        ?>
     	<form id="padform" method="POST" action = "">
+        
+        
+        
+        <?php
+        
+        echo  $page['warning'];
+        
+        ?>
 
+            <!-- Code window -->
     		<textarea id="codearea" name="code" rows="10"><?php echo $_REQUEST['code']; ?></textarea> <br/>
     		<div class="bottomtools"><input type="submit" name="submit" value="submit" class="button" /></div>
     	</form>	

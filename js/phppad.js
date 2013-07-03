@@ -21,7 +21,11 @@ var myCodeMirror = CodeMirror.fromTextArea(myTextArea, {
         theme: "monokai"
 
 });
-
+    $("#cmbtheme").change(function(){
+         var theme = $(this).val();
+        myCodeMirror.setOption("theme", theme);
+        
+    });
 
     $("#padform").submit(function(){
 
