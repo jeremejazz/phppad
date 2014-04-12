@@ -1,4 +1,7 @@
-	.warning{
+	body{
+    font-family: verdana;
+  }
+  .warning{
 			border: dotted 1px red ;
 			background-color: yellow;
 			color:red;
@@ -6,7 +9,7 @@
 		}
 		#output{
 			border: dotted 1px black;
-			min-height: 100px;
+			min-height: 150px;
 			padding:10px;
 		}
 
@@ -55,5 +58,5 @@
   }
   
   #themechooser{
-      text-align:right;width:300px;float:right;
+      text-align:right;width:350px;float:right; white-space: top;
   }

@@ -21,6 +21,8 @@ var myCodeMirror = CodeMirror.fromTextArea(myTextArea, {
         theme: "monokai"
 
 });
+
+myCodeMirror.setSize(null, 230)
     $("#cmbtheme").change(function(){
          var theme = $(this).val();
         myCodeMirror.setOption("theme", theme);
@@ -29,8 +31,22 @@ var myCodeMirror = CodeMirror.fromTextArea(myTextArea, {
 
     $("#padform").submit(function(){
 
-        $("#output").load('pad.php',
-                { code: $("#codearea").val() }).hide().fadeIn();
+     
+
+        $.ajax({
+            url: 'pad.php',
+            data: {
+                code: $("#codearea").val() 
+            },
+            type: "POST",
+            beforeSend: function(){
+                $("#output").html('');
+
+            },
+            success: function(output){
+                $("#output").html(output);
+            }
+        });
 
         return false;
     });

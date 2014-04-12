@@ -19,18 +19,7 @@ if (get_magic_quotes_gpc()) {
     unset($process);
 }
 $page = array();
-
-ob_start();
-        if(!$_REQUEST['submit']){
-        ?>
-        <div class="warning">Warning: Do not upload to public web server. For local use only</div>
-        <?php
-          }
-    
-    $page['warning'] = ob_get_contents();
-    ob_end_clean();
-
-
+ 
 ?>
 
 <!DOCTYPE html />
@@ -71,8 +60,13 @@ ob_start();
 
 </head>
 <body>
+
     <div class="header">
+
+
     <div id = "themechooser">
+                <iframe src="http://ghbtns.com/github-btn.html?user=jeremejazz&repo=phppad&type=fork"
+  allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
          Select a theme: 
         <select  id="cmbtheme">
             <option selected>default</option>
@@ -108,14 +102,10 @@ ob_start();
         
         
         
-        <?php
-        
-        echo  $page['warning'];
-        
-        ?>
+ 
 
             <!-- Code window -->
-    		<textarea id="codearea" name="code" rows="10"><?php echo $_REQUEST['code']; ?></textarea> <br/>
+    		<textarea id="codearea" name="code" rows="8"><?php echo $_REQUEST['code']; ?></textarea> <br/>
     		<div class="bottomtools"><input type="submit" name="submit" value="submit" class="button" /></div>
     	</form>	
 
@@ -130,6 +120,8 @@ ob_start();
 
     		?>
     	</div>
+
+
 </div>
 	<script type="text/javascript" src="js/phppad.js"></script>
 </body>
