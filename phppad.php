@@ -27,6 +27,9 @@ $page = array();
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="php, phppad, editor, programming, online, jeremejazz" />
+
+  <meta name="description" content="PHP Pad is an online php editor that lets you run your scripts on the browser. Play with your php code here">
 	<title>PHP Pad </title>
 	<script src="codemirror/lib/codemirror.js"></script>
 <link rel="stylesheet" href="codemirror/lib/codemirror.css">
@@ -121,7 +124,9 @@ $page = array();
     		?>
     	</div>
 
-
+        <div id="footer">
+           <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">PHP Pad</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://jeremejazz.github.io" property="cc:attributionName" rel="cc:attributionURL">jeremejazz</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+        </div>
 </div>
 	<script type="text/javascript" src="js/phppad.js"></script>
 </body>
