@@ -18,7 +18,7 @@ var myCodeMirror = CodeMirror.fromTextArea(myTextArea, {
         indentWithTabs: true,
         enterMode: "keep",
         tabMode: "shift",
-        theme: "monokai"
+        theme: "monokai" //because monokai is "cool"
 
 });
 
