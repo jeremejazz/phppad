@@ -61,3 +61,5 @@
   #themechooser{
       text-align:right;width:300px;float:right;
   }
+
+        .CodeMirror pre.CodeMirror-placeholder { color: #999; }

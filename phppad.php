@@ -48,7 +48,8 @@ ob_start();
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
 
-	<script src="js/vendor/codemirror.js"></script>
+    <script src="js/vendor/codemirror.js"></script>
+	<script src="js/vendor/placeholder.js"></script>
     <link rel="stylesheet" href="css/codemirror.css">
     <link rel="stylesheet" href="codemirror/theme/monokai.css">
 
@@ -152,7 +153,7 @@ ob_start();
         ?>
 
             <!-- Code window -->
-    		<textarea id="codearea" name="code" rows="10" ><?php echo $_REQUEST['code']; ?></textarea> <br/>
+    		<textarea id="codearea" name="code" rows="10" placeholder="Code goes here ex:&lt;php  ... ?&gt;"><?php echo $_REQUEST['code']; ?></textarea> <br/>
     		<div class="bottomtools"><input type="submit" name="submit" value="submit" class="button" /></div>
     	</form>	
 
