@@ -10,8 +10,9 @@
 		}
 		#output{
 			border: dotted 1px black;
-			min-height: 100px;
+			min-height: 150px;
 			padding:10px;
+
 		}
 
 		.button { 

@@ -139,7 +139,7 @@ ob_start();
      
     
     </div>
-    <div class="content">
+    <div class="container">
     	 
 
     	<form id="padform" method="POST" action = "">
@@ -153,12 +153,13 @@ ob_start();
         ?>
 
             <!-- Code window -->
-    		<textarea id="codearea" name="code" rows="10" placeholder="Code goes here ex:&lt;php  ... ?&gt;"><?php echo $_REQUEST['code']; ?></textarea> <br/>
+    		<textarea id="codearea" name="code" rows="10" placeholder="Code goes here (ex. : &lt;php  ... ?&gt;)"><?php echo $_REQUEST['code']; ?></textarea> <br/>
     		<div class="bottomtools"><input type="submit" name="submit" value="submit" class="button" /></div>
     	</form>	
 
     	Output: 
-    	<div id="output">
+    	<div id="output"> 
+
     		<?php 
 
                 if($_REQUEST['submit']){
@@ -167,8 +168,13 @@ ob_start();
                 }
 
     		?>
+
     	</div>
-</div>
+        <footer>
+        <small>Brought to you by <a href="http://jeremecausing.com">Jereme</a></small>
+      </footer>
+</div><!--.container -->
+
 	<script type="text/javascript" src="js/phppad.js"></script>
 </body>
 </html>
