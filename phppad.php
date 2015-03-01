@@ -48,27 +48,27 @@ ob_start();
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
 
-	<script src="codemirror/lib/codemirror.js"></script>
-    <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+	<script src="js/vendor/codemirror.js"></script>
+    <link rel="stylesheet" href="css/codemirror.css">
     <link rel="stylesheet" href="codemirror/theme/monokai.css">
 
-    <link rel="stylesheet" href="codemirror/theme/neat.css">
-    <link rel="stylesheet" href="codemirror/theme/elegant.css">
-    <link rel="stylesheet" href="codemirror/theme/erlang-dark.css">
-    <link rel="stylesheet" href="codemirror/theme/night.css">
-    <link rel="stylesheet" href="codemirror/theme/monokai.css">
-    <link rel="stylesheet" href="codemirror/theme/cobalt.css">
-    <link rel="stylesheet" href="codemirror/theme/eclipse.css">
-    <link rel="stylesheet" href="codemirror/theme/rubyblue.css">
-    <link rel="stylesheet" href="codemirror/theme/lesser-dark.css">
-    <link rel="stylesheet" href="codemirror/theme/xq-dark.css">
-    <link rel="stylesheet" href="codemirror/theme/xq-light.css">
-    <link rel="stylesheet" href="codemirror/theme/ambiance.css">
-    <link rel="stylesheet" href="codemirror/theme/blackboard.css">
-    <link rel="stylesheet" href="codemirror/theme/vibrant-ink.css">
-    <link rel="stylesheet" href="codemirror/theme/solarized.css">
-    <link rel="stylesheet" href="codemirror/theme/twilight.css">
-    <link rel="stylesheet" href="codemirror/theme/midnight.css">
+    <link rel="stylesheet" href="css/themes/neat.css">
+    <link rel="stylesheet" href="css/themes/elegant.css">
+    <link rel="stylesheet" href="css/themes/erlang-dark.css">
+    <link rel="stylesheet" href="css/themes/night.css">
+    <link rel="stylesheet" href="css/themes/monokai.css">
+    <link rel="stylesheet" href="css/themes/cobalt.css">
+    <link rel="stylesheet" href="css/themes/eclipse.css">
+    <link rel="stylesheet" href="css/themes/rubyblue.css">
+    <link rel="stylesheet" href="css/themes/lesser-dark.css">
+    <link rel="stylesheet" href="css/themes/xq-dark.css">
+    <link rel="stylesheet" href="css/themes/xq-light.css">
+    <link rel="stylesheet" href="css/themes/ambiance.css">
+    <link rel="stylesheet" href="css/themes/blackboard.css">
+    <link rel="stylesheet" href="css/themes/vibrant-ink.css">
+    <link rel="stylesheet" href="css/themes/solarized.css">
+    <link rel="stylesheet" href="css/themes/twilight.css">
+    <link rel="stylesheet" href="css/themes/midnight.css">
 
 
     <link rel="stylesheet" href="css/styles.css">
@@ -84,7 +84,7 @@ ob_start();
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -139,7 +139,7 @@ ob_start();
     
     </div>
     <div class="content">
-    	Code: 
+    	 
 
     	<form id="padform" method="POST" action = "">
         
@@ -152,7 +152,7 @@ ob_start();
         ?>
 
             <!-- Code window -->
-    		<textarea id="codearea" name="code" rows="10"><?php echo $_REQUEST['code']; ?></textarea> <br/>
+    		<textarea id="codearea" name="code" rows="10" ><?php echo $_REQUEST['code']; ?></textarea> <br/>
     		<div class="bottomtools"><input type="submit" name="submit" value="submit" class="button" /></div>
     	</form>	
 
