@@ -1,13 +1,13 @@
 PHPPad
 ======
 
-inspired from codepad.org. I created this for personal use just to run php codes without creating a new file. Uses codemirror for sy for syntax highlighting. 
+A PHP application that lets you play arount with scripts directly at the browser. 
 
-<a href="http://imgur.com/4FF9wdm"><img src="http://i.imgur.com/4FF9wdm.jpg" alt="" title="Hosted by imgur.com" /></a>
+<a href="http://imgur.com/TQqevIu"><img src="http://i.imgur.com/TQqevIu.png" alt="" title="Hosted by imgur.com" /></a>
 
 ###Features:
 -Ajax submit
--PHP syntax highlighting (using codemirror)
+-PHP/HTML/CSS/Javascript syntax highlighting (codemirror)
 
 
 Notes:
