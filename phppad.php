@@ -48,8 +48,7 @@ ob_start();
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <script src="js/vendor/codemirror/codemirror.js"></script>
-	<script src="js/vendor/placeholder.js"></script>
+
     <link rel="stylesheet" href="css/codemirror.css">
     <link rel="stylesheet" href="css/themes/monokai.css">
 
@@ -71,12 +70,20 @@ ob_start();
     <link rel="stylesheet" href="css/themes/twilight.css">
     <link rel="stylesheet" href="css/themes/midnight.css">
 
-
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/vendor/codemirror/codemirror.js"></script>
+    <script src="js/vendor/placeholder.js"></script>
+    <script src="js/vendor/codemirror/addon/edit/matchbrackets.js"></script>
+    <script src="js/vendor/codemirror/mode/css/css.js"></script>
+    <script src="js/vendor/codemirror/mode/xml/xml.js"></script>
+    <script src="js/vendor/codemirror/mode/javascript/javascript.js"></script>
+    <script src="js/vendor/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
     <script src="js/vendor/codemirror/mode/clike/clike.js"></script>
     <script src="js/vendor/codemirror/mode/php/php.js"></script>
+
     <script src="js/vendor/jquery-1.11.2.min.js"></script>
-            <script src="js/vendor/bootstrap.min.js"></script>
+     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     	
 
