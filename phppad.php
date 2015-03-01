@@ -33,15 +33,24 @@ ob_start();
 
 ?>
 
-<!DOCTYPE html />
-
-<html>
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>PHP Pad </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
 	<script src="codemirror/lib/codemirror.js"></script>
-<link rel="stylesheet" href="codemirror/lib/codemirror.css">
-<link rel="stylesheet" href="codemirror/theme/monokai.css">
+    <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="codemirror/theme/monokai.css">
 
     <link rel="stylesheet" href="codemirror/theme/neat.css">
     <link rel="stylesheet" href="codemirror/theme/elegant.css">
@@ -62,42 +71,70 @@ ob_start();
     <link rel="stylesheet" href="codemirror/theme/midnight.css">
 
 
-<link rel="stylesheet" href="css/styles.css">
-<script src="codemirror/mode/clike/clike.js"></script>
-<script src="codemirror/mode/php/php.js"></script>
-<script src="js/jquery-1.9.1.min.js"></script>
-
-	
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="codemirror/mode/clike/clike.js"></script>
+    <script src="codemirror/mode/php/php.js"></script>
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+            <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    	
 
 </head>
 <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">PHPPad</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <div class="navbar-form navbar-right" role="form">
+            <div class="form-group  ">
+                   <label  >Theme:</label>
+                    <select class="form-control" id="cmbtheme">
+                        <option selected>default</option>
+                        <option>ambiance</option>
+                        <option>blackboard</option>
+                        <option>cobalt</option>
+                        <option>eclipse</option>
+                        <option>elegant</option>
+                        <option>erlang-dark</option>
+                        <option>lesser-dark</option>
+                        <option>midnight</option>
+                        <option selected>monokai</option>
+                        <option>neat</option>
+                        <option>night</option>
+                        <option>rubyblue</option>
+                        <option>solarized dark</option>
+                        <option>solarized light</option>
+                        <option>twilight</option>
+                        <option>vibrant-ink</option>
+                        <option>xq-dark</option>
+                        <option>xq-light</option>
+                    </select>
+            </div>
+             
+             
+          </div>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+
     <div class="header">
     <div id = "themechooser">
-         Select a theme: 
-        <select  id="cmbtheme">
-            <option selected>default</option>
-            <option>ambiance</option>
-            <option>blackboard</option>
-            <option>cobalt</option>
-            <option>eclipse</option>
-            <option>elegant</option>
-            <option>erlang-dark</option>
-            <option>lesser-dark</option>
-            <option>midnight</option>
-            <option selected>monokai</option>
-            <option>neat</option>
-            <option>night</option>
-            <option>rubyblue</option>
-            <option>solarized dark</option>
-            <option>solarized light</option>
-            <option>twilight</option>
-            <option>vibrant-ink</option>
-            <option>xq-dark</option>
-            <option>xq-light</option>
-        </select>
+        
         </div>
     
-    <div class="logo"></div>
+
      
     
     </div>
